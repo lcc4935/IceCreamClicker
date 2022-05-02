@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.InstructionsPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Instructions" Style="{StaticResource Key=HeaderStyle}" />
+            <Label Text="Click the ice cream to gain points." />
+            <Label Text="Go to the shop to purchase upgrades." />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

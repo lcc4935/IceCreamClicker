@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="About Page" Style="{StaticResource Key=HeaderStyle}" />
+            <Label Text="Hello, my name is Lauren Casale."/>
+            <Label Text="I made this ice cream clicker game in IGME 340, taught by Steve Maier."/>
+            <Label Text="I hope you enjoy!"/>
+            <Label Text="-Lauren Casale" Style="{StaticResource Key=SignOff}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

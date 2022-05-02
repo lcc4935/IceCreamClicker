@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FinalProject.ViewModels"
+             x:Class="FinalProject.DetailPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding Data.Name}" Style="{StaticResource Key=HeaderStyle}" />
+            <Label Text="{Binding Data.Price}" FontAttributes="Italic"/>
+            <Label Text="{Binding Data.Info}" />
+
+            <Button x:Name="upgrade" Text= "Get Upgrade" Clicked="UpgradeButton_Clicked" IsVisible="false"/>
+
+            <Label x:Name="purchase" Text="Purchased Upgrade" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" TextColor="DarkRed" IsVisible="false" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

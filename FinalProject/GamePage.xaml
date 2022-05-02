@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FinalProject.ViewModels"
+             x:Class="FinalProject.GamePage">
+
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+
+        <Label Text="Ice Cream Clicker" Style="{StaticResource Key=HeaderStyle}" />
+
+        <Button Text="About" Clicked="AboutButton_Clicked" />
+        <Button Text="Instructions" Clicked="InstructionButton_Clicked" />
+        <Button Text="Shop" Clicked="ShopButton_Clicked" />
+
+        <ImageButton Source="iceCream.jpg"></ImageButton>
+        <Label x:Name="clickCounts" Text="Ice Cream: 0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Style="{StaticResource Key=IceCreamHeader}" />
+
+        <Button Text="          /&#10;        ( )&#10;      (     )&#10;    (         )&#10;  (             )&#10;(                 )&#10;  \ ##### /&#10;    \ ### /&#10;      \ # /&#10;        \/" 
+                Clicked="IceCreamButton_Clicked" VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Style="{StaticResource Key=IceCreamButton}" />
+
+        <Label x:Name="plus5" Text="+5" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" TextColor="#F94E56" IsVisible="false" />
+
+    </StackLayout>
+
+
+</ContentPage>

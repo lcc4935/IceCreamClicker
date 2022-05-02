@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalProject.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Ice Cream Clicker" Style="{StaticResource Key=HeaderStyle}" />
+
+            <Button Text="Start" Clicked="Start_Button_Clicked" Style="{StaticResource Key=StartButton}" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
